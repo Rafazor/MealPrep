@@ -10,8 +10,8 @@ export default class Home extends React.Component {
         return (
             <View style={styles.container}>
                 <Button title={'Dinner Ideas'} onPress={() => this.goToRecipeList()} />
-                <Text>Open up App.js to start your app!</Text>
-                <Text>Open up App.js to start your app!</Text>
+                <Button title={'Food Ideas'} onPress={() => this.goToRecipeList()} />
+                <Button title={'Breakfast Ideas'} onPress={() => this.goToRecipeList()} />
             </View>
         );
     }
