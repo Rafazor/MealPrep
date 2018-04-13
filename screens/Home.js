@@ -1,16 +1,14 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
-export default class GroceryList extends React.Component {
+export default class Home extends React.Component {
 
     render() {
         return (
             <View style={styles.container}>
-                <Text>Grocery 1</Text>
-                <Text>Grocery 2</Text>
-                <Text>Grocery 3</Text>
-                <Text>Grocery 4</Text>
-                <Text>Grocery 5</Text>
+                <Text>Open up App.js to start working on your app!</Text>
+                <Text>Open up App.js to start your app!</Text>
+                <Text>Open up App.js to start your app!</Text>
             </View>
         );
     }
