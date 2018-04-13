@@ -9,9 +9,11 @@ export default class Home extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Button title={'Dinner Ideas'} onPress={() => this.goToRecipeList()} />
-                <Button title={'Food Ideas'} onPress={() => this.goToRecipeList()} />
                 <Button title={'Breakfast Ideas'} onPress={() => this.goToRecipeList()} />
+                <Button title={'Lunch Ideas'} onPress={() => this.goToRecipeList()} />
+                <Button title={'Dinner Ideas'} onPress={() => this.goToRecipeList()} />
+                <Button title={'Smoothies Ideas'} onPress={() => this.goToRecipeList()} />
+                <Button title={'Snacks Ideas'} onPress={() => this.goToRecipeList()} />
             </View>
         );
     }
