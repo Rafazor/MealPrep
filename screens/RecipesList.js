@@ -1,5 +1,6 @@
 import React from 'react';
-import {StyleSheet, Text, View, Button} from 'react-native';
+import {StyleSheet, ScrollView, Button} from 'react-native';
+import { ListItem} from 'react-native-elements';
 
 export default class RecipesList extends React.Component {
     goToRecipeDetails = () => {
@@ -7,22 +8,77 @@ export default class RecipesList extends React.Component {
     };
 
     render() {
+        let list =[
+            {
+                name: 'Recipe 1',
+            },
+            {
+                name: 'Recipe 2',
+            },
+            {
+                name: 'Recipe 3',
+            },
+            {
+                name: 'Recipe 4'
+            },
+            {
+                name: 'Recipe 5',
+            },
+            {
+                name: 'Recipe 6',
+            },
+            {
+                name: 'Recipe 7',
+            },
+            {
+                name: 'Recipe 8',
+            },
+            {
+                name: 'Recipe 9',
+            },
+            {
+                name: 'Recipe 10',
+            },
+            {
+                name: 'Recipe 11',
+            },
+            {
+                name: 'Recipe 12',
+            },
+            {
+                name: 'Recipe 13',
+            },
+            {
+                name: 'Recipe 14',
+            },
+            {
+                name: 'Recipe 15',
+            },
+            {
+                name: 'Recipe 16',
+            }
+        ]
         return (
-            <View style={styles.container}>
-                <Button title={'Recipe 1'} onPress={() => this.goToRecipeDetails()}/>
-                <Button title={'Recipe 2'} onPress={() => this.goToRecipeDetails()}/>
-                <Button title={'Recipe 3'} onPress={() => this.goToRecipeDetails()}/>
-                <Button title={'Recipe 4'} onPress={() => this.goToRecipeDetails()}/>
-            </View>
+            <ScrollView >
+                {
+                    list.map((l, i) => (
+                        <ListItem
+                            key={i}
+                            title={l.name}
+                            onPress={() => this.goToRecipeDetails()}
+                        />
+                    ))
+
+                }
+            </ScrollView>
         );
     }
 }
-
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
+        // flex: 1,
+        // alignItems: 'center',
+        // justifyContent: 'center',
+
     },
 });
